@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var orangeView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        orangeView.clipsToBounds  = false
+        orangeView.layer.cornerRadius = 20 //shadow
+        
+        //clipsToBounds vs cornerRadius vs shadow
+
     }
 
 
